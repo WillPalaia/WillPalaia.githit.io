@@ -1,74 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f9f9f9;
-                color: #333;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                position: relative;
-                overflow: hidden;
-            }
-            .container {
-                max-width: 850px;
-                margin: 0 20px;
-                padding: 30px;
-                background-color: #fff;
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-                border-radius: 8px;
-                text-align: left;
-                transform: translateY(-20%);
-            }
-            .bold {
-                font-weight: bold;
-                font-size: 1.1em;
-                margin-bottom: 15px;
-            }
-            h1 {
-                font-size: 2.2em;
-                margin-bottom: 25px;
-            }
-            h2 {
-                font-size: 1.7em;
-                margin-bottom: 20px;
-            }
-            h3 {
-                font-size: 1.3em;
-                margin-bottom: 15px;
-            }
-            p {
-                font-size: 1.1em;
-                margin-bottom: 15px;
-            }
-            a {
-                color: #0073e6;
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>About</h1>
-            <p class="bold">I'm Will Palaia, a third year student at UMass Amherst studying Computer Science and Economics</p>
-            <p class="bold">I'm a Software Engineer Intern (SWE) at Imago Rehab, a virtual therapy startup based in Lowell, MA</p>
-            <p class="bold">Previously, I was a Software Engineer Intern (SWE) at ISO New England and a Software Developer Intern (SDE) at BigBear.ai</p>
-            <p class="bold">Some of my hobbies include stock trading, poker, soccer, golf, tennis, and drumming</p>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="author" content="Will Palaia" />
+        <meta name="description" content="Will&#39;s Personal Website" />
+        <meta name="keywords" content="Will Palaia, Will, Palaia, willpalaia, software engineer" />
 
-            <h2>Contact</h2>
-            <p class="bold">You can find my resume <a href="resume.pdf" target="_blank" rel="noopener noreferrer">here</a></p>
-            <p class="bold">
-                Feel free to <a href="mailto:willpalaia2@gmail.com" target="_blank" rel="noopener noreferrer">email me</a>
-                or message me on <a href="https://linkedin.com/in/willpalaia" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </p>
+        <meta itemprop="name" content="Will Palaia" />
+        <!--<meta itemprop="image" content="https://raw.githubusercontent.com/adamalston/v1/master/assets/projects/website.png" />-->
+        <meta itemprop="description" content="Will&#39;s Personal Website" />
+
+        <meta property="og:title" content="Will Palaia" />
+        <meta property="og:url" content="https://willpalaia.com/" />
+        <!--<meta property="og:image" content="https://raw.githubusercontent.com/adamalston/v1/master/assets/projects/website.png" />-->
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:description" content="Personal Website" />
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Will Palaia | Personal Website" />
+        <meta property="og:locale" content="en_US" />
+
+        <title>Will Palaia</title>
+        
+        <link rel="shortcut icon" href="https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/blue2.svg" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="nav-item"><a class="nav-item-link" href="#hero">Home</a></div>
+                <div class="nav-item"><a class="nav-item-link" href="#about">About</a></div>
+                <div class="nav-item"><a class="nav-item-link" href="#projects">Projects</a></div>
+                <div class="nav-item"><a class="nav-item-link" href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></div>
+            </div>
         </div>
+
+        <div id="hero" class="hero">
+            <div class="hero-container">
+                <div class="hero-profile">
+
+                    <div class="hero-profile-img-wrapper"><img class="hero-profile-img" src="assets/myAvatar.svg" /></div>
+
+                    <div class="hero-profile-content">
+                        <div class="hero-headline">Will Palaia</div>
+                        <div class="hero-text">Software Engineer</div>
+                    </div>
+
+                    <div class="hero-icons">
+                        <a href="https://github.com/WillPalaia" target="_blank" class="icon-link" title="GitHub"><i class="fab fa-github"></i> </a>
+                        <a href="https://www.linkedin.com/in/willpalaia/" target="_blank" class="icon-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="resume.pdf" target="_blank" class="icon-link" rel="noopener noreferrer" title="Resume"><i class="far fa-file"></i></a>
+                        <a href="mailto:willpalaia2@gmail.com" target="_blank" rel="noopener noreferrer" class="icon-link" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+
+                    <a class="arrow fa fa-arrow-down fa-3x" href="#about"></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="about">
+            <div class="container about-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="container about-section">
+                            <h1>About Me</h1>
+                            <p class="intro">I'm <span class="highlight">Will Palaia</span>, a third-year student at <span class="highlight">UMass Amherst</span> studying <span class="highlight">Computer Science</span> and <span class="highlight">Economics</span>.</p>
+                            <p class="details">
+                                Currently, I work as a <span class="highlight">Software Engineer Intern (SWE)</span> at 
+                                <span class="highlight">Imago Rehab</span>, a virtual therapy startup based in Lowell, MA.
+                            </p>
+                            <p class="details">
+                                Previously, I was a <span class="highlight">Software Engineer Intern (SWE)</span> at 
+                                <span class="highlight">ISO New England</span> and a <span class="highlight">Software Developer Intern (SDE)</span> at <span class="highlight">BigBear.ai</span>.
+                            </p>
+                            <p class="details">
+                                I am currently interested in <span class="highlight">reinforcement learning</span> 
+                                and the applications it has in my current life.
+                            </p>
+                            <p class="details">In my free time, I enjoy stock trading, poker, soccer, golf, tennis, and drumming.</p>
+                        </div>
+                        <div class="about-card-group">
+                            <div class="about-card-wrapper">
+                                <a href="https://imagorehab.com/" target="_blank" rel="noopener noreferrer">
+                                    <div class="about-card">
+                                        <div class="about-card-icon-wrapper">
+                                            <div class="about-card-icon"><img style="vertical-align: middle;" src="https://cdn-ikpmbhp.nitrocdn.com/fdpTIVesOyCYskAZAUTznBVgVgNCPLYY/assets/images/source/rev-c1c2b36/imagorehab.com/wp-content/uploads/2023/12/logo-sticky.svg" /></div>
+                                        </div>
+                                        <div class="about-card-title">
+                                            Software Engineer Intern
+                                            <br />
+                                            <b>Imago Rehab</b>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="about-card-wrapper">
+                                <a href="https://www.cics.umass.edu/" target="_blank" rel="noopener noreferrer">
+                                    <div class="about-card">
+                                        <div class="about-card-icon-wrapper">
+                                            <div class="about-card-icon"><img src="assets/UMass_logo.png" /></div>
+                                        </div>
+                                        <div class="about-card-title">
+                                            Studying at
+                                            <br />
+                                            <b>University of Massachusetts Amherst</b>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="about-card-wrapper">
+                                <a href="https://www.linkedin.com/company/minutemen-international/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+                                    <div class="about-card">
+                                        <div class="about-card-icon-wrapper">
+                                            <div class="about-card-icon"><img src="assets/MIEF_logo.jpg"/></div>
+                                        </div>
+                                        <div class="about-card-title">
+                                            Quantitative Software Engineer
+                                            <br />
+                                            <b>Minutemen Intl. Equity Fund</b>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="about-card-wrapper">
+                                <div class="about-card">
+                                    <div class="about-card-icon-wrapper">
+                                        <div class="about-card-icon"><img src="assets/pokerChip.svg" /></div>
+                                    </div>
+                                    <div class="about-card-title">
+                                        Interests
+                                        <br />
+                                        <b>Trading &middot; Poker &middot; Tennis &middot; Drums</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col about-educationcol">
+                        <div class="title">Education</div>
+                        <div class="about-timeline">
+
+                            <div class="timeline-card timeline-card-blue">
+                                <div class="timeline-card-title">University of Massachusetts Amherst</div>
+                                <div class="timeline-card-subtitle">BS &middot; Computer Science<br>BA &middot; Economics</div>
+                                <div class="timeline-card-time">Expected 2026</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col about-experiencecol">
+                        <div class="title">Experience</div>
+                        <div class="about-timeline">
+
+                            <div class="timeline-card timeline-card-blue">
+                                <div class="timeline-card-title">Imago Rehab</div>
+                                <div class="timeline-card-subtitle">Software Engineer Intern</div>
+                                <div class="timeline-card-content">&middot; Created web app through Android Studio, Nodejs, and ExpressJS, connected to a MongoDB database.</div>
+                                <div class="timeline-card-content">&middot; Integrated AI-powered chatbot into app through OpenAI API to enhance customer support, offering
+                                    automated responses to user generated queries.</div>
+                                <div class="timeline-card-time">Sep 2024 - Dec 2024</div>
+                            </div>
+
+                            <div class="timeline-card timeline-card-blue">
+                                <div class="timeline-card-title">ISO New England</div>
+                                <div class="timeline-card-subtitle">Software/Data Verification Engineer Intern</div>
+                                <div class="timeline-card-content">&middot; Implemented a process to verify transformer energy levels across New England as well as dynamically adjust
+                                    their representation in the power grid model, enhancing daily energy forecast accuracy by >5%.</div>
+                                <div class="timeline-card-content">&middot; Developed Python script to filter and format >37,000 rows of Excel data, reducing processing time by ~30 hours.</div>
+                                <div class="timeline-card-content">&middot; Programmed internal tool to analyze discrepancies in load data files, build without any built-in libraries. </div>
+                                <div class="timeline-card-time">June 2024 - Aug 2024</div>
+                            </div>
+
+                            <div class="timeline-card timeline-card-green">
+                                <div class="timeline-card-title">BigBear.AI</div>
+                                <div class="timeline-card-subtitle">Software Developer Intern</div>
+                                <div class="timeline-card-content">&middot; Built top-to-bottom Jira cloud-based web application over three two-week sprints using agile technologies.</div>
+                                <div class="timeline-card-content">&middot; Implemented hierarchical UI and progress features to increase efficiency and scalability on the user-side.</div>
+                                <div class="timeline-card-content">&middot; Designed and integrated unit and CI/CD pipeline tests - increased total app test coverage by >25%.</div>
+                                <div class="timeline-card-content">&middot; Deployed on AWS ECS and released to the Atlassian Marketplace, contributed to 100% of total profits.</div>
+                                <div class="timeline-card-time">June 2022 - Aug 2022</div>
+                            </div>
+
+                            <div class="timeline-card timeline-card-green">
+                                <div class="timeline-card-title">US Soccer</div>
+                                <div class="timeline-card-subtitle">Soccer Referee</div>
+                                <div class="timeline-card-time">Sep 2017 - Aug 2022</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col about-skillcol">
+                        <div class="title">Skills</div>
+                        <div class="about-timeline">
+
+                            <div class="skills-title">Languages</div>
+                            <div class="skills-content">
+                                <div class="skills-tile">Python</div>
+                                <div class="skills-tile">Java</div>
+                                <div class="skills-tile">JavaScript</div>
+                                <div class="skills-tile">TypeScript</div>
+                                <div class="skills-tile">C</div>
+                                <div class="skills-tile">SQL</div>
+                                <div class="skills-tile">HTML/CSS</div>
+                            </div>
+
+                            <div class="skills-title">Technologies</div>
+                            <div class="skills-content">
+                                <div class="skills-tile">Node.js</div>
+                                <div class="skills-tile">React</div>
+                                <div class="skills-tile">Git</div>
+                                <div class="skills-tile">AWS (EC2)</div>
+                                <div class="skills-tile">Jira</div>
+                                <div class="skills-tile">Linux</div>
+                                <div class="skills-tile">CI/CD</div>
+                                <div class="skills-tile">Docker</div>
+                                <div class="skills-tile">Kubernetes</div>
+                                <div class="skills-tile">VBA</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="project">
+            <div class="container project-container">
+                <div class="row">
+                    <div class="title">Projects</div>
+                </div>
+                <div class="row project-row">
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-website"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">Personal Website</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/WillPalaia/Personal-Webpage">
+                                <div class="project-card-btn project-card-blackbutton">GitHub</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-trailsafe"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">TrailSafe</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/WillPalaia/TrailSafe/raw/refs/heads/main/demo/Demo%20Video.mp4">
+                                <div class="project-card-btn">Demo</div>
+                            </a>
+                            <a target="_blank" href="https://github.com/WillPalaia/TrailSafe">
+                                <div class="project-card-btn project-card-blackbutton">GitHub</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-LYSA"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">Soccer Team Generator</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/WillPalaia/LYSA-Eval-Framework">
+                                <div class="project-card-btn project-card-blackbutton">Github</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-rubiks"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">Rubik's Cube Solver</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/WillPalaia/RubiksCubeSolver">
+                                <div class="project-card-btn project-card-blackbutton">Github</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-spotify"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">Voice Controlled Spotify</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/WillPalaia/SpotifyVoiceRecognition">
+                                <div class="project-card-btn project-card-blackbutton">GitHub</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-tracker"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">Restaurant Food Tracker</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/WillPalaia/RestaurantTracker">
+                                <div class="project-card-btn project-card-blackbutton">GitHub</div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Source: <a href="https://github.com/WillPalaia/Personal-Webpage" id="redir" target="_blank" rel="noopener noreferrer">github.com/WillPalaia/Personal-Webpage</a>
+        </div>
+        <!-- <script type="text/javascript" src="script.js"></script> -->
+        <!-- 8a%#J67% -->
     </body>
 </html>
